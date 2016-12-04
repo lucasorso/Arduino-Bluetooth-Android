@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Bluetooth Arduino</string>
+    <string name="led1">Led 1</string>
+    <string name="led2">Led 2</string>
+    <string name="led3">Led 3</string>
+    <string name="dispositivo_sem_bluetooth">Este dispositivo não possui Bluetooth.</string>
+    <string name="bluetooth_desativado">Bluetooth Desativado !</string>
+    <string name="bluetoth_ativado">Bluetooth Ativado !</string>
+    <string name="nenhum_dispositivo_selecionado">Nenum dispositvo foi selecionado.</string>
+    <string name="conectado">Conectado</string>
+    <string name="desconectado">Desconectado</string>
+    <string name="conectar">Conectar</string>
+    <string name="desconectar">Desconectar</string>
+    <string name="dispositivo">%1$s \n %2$s</string>
+    <string name="reconhecimento_nao_suportado">Reconhecimento de voz não suportado.</string>
+    <string name="clique_no_mi">Clique no microfone</string>
+    <string name="professor">Professor: </string>
+    <string name="paulo_joao_martins">Paulo João Martins</string>
+</resources>

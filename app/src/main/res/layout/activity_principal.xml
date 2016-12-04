@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_principal"
+    android:layout_width="match_parent"
+    android:background="@drawable/bg_gradient"
+    app:background="@drawable/gremio"
+    android:layout_height="match_parent"
+    tools:context="com.orsomob.bluetootharduino.ActivityPrincipal">
+
+    <TextView
+        android:id="@+id/textViewTitulo"
+        android:layout_width="352dp"
+        android:layout_height="23dp"
+        android:text="Comunicação de dados"
+        style="@style/TexViewOrsoMob"
+        android:textAlignment="center"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.SearchResult.Title"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/relativeLayoutTopo"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginStart="16dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <Button
+        android:text="@string/led1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonLed1"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTitulo"
+        android:layout_marginStart="16dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <Button
+        android:text="@string/led2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonLed2"
+        app:layout_constraintRight_toLeftOf="@+id/buttonLed3"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTitulo"
+        android:layout_marginStart="8dp"
+        app:layout_constraintLeft_toRightOf="@+id/buttonLed1" />
+
+    <Button
+        android:text="@string/led3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonLed3"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTitulo"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <Button
+        android:text="Conectar"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:id="@+id/buttonConexao"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginStart="16dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintVertical_bias="0.18" />
+
+    <TextView
+        style="@style/TexViewOrsoMob"
+        android:text="Desconectado"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewStatus"
+        android:textAlignment="center"
+        android:layout_marginStart="16dp"
+        android:minLines="2"
+        android:maxLines="2"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/textViewDispositivo"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.0" />
+
+    <TextView
+        style="@style/TexViewOrsoMob"
+        android:text="@string/nenhum_dispositivo_selecionado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewDispositivo"
+        android:textAlignment="center"
+        android:minLines="2"
+        android:maxLines="2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayoutTopo"
+        android:layout_width="352dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginStart="16dp"
+        app:layout_constraintLeft_toLeftOf="parent">
+
+        <TextView
+            android:id="@+id/textViewNomeProfessor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/paulo_joao_martins"
+            style="@style/TexViewOrsoMob"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/textViewProfessor"
+            android:layout_marginStart="5dp"/>
+
+        <TextView
+            android:id="@+id/textViewProfessor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/professor"
+            style="@style/TexViewOrsoMob"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true" />
+
+        <ImageView
+            android:id="@+id/imageViewUnesc"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="@drawable/logo_unesc"
+            android:padding="50dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="352dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:id="@+id/linearLayout"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginStart="16dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/buttonLed2">
+
+        <ImageButton
+            android:id="@+id/buttonMic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/circle"
+            android:src="@android:drawable/ic_btn_speak_now"
+            android:tint="@color/branco"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/clique_no_mi"
+            android:textColor="@color/branco"
+            android:textSize="15dp"
+            style="@style/TexViewOrsoMob"/>
+    </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>
